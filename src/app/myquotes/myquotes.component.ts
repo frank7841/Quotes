@@ -9,9 +9,15 @@ export class MyquotesComponent implements OnInit {
   quotes: MyQuote[] = [
     new MyQuote (1,'Frankline','Avengers Assemble','Captain America',2,new Date()),
   ]
-  quoteDelete(isComplete, index){
-    if(isComplete){
-    let toDelete = confirm(`Are you syre you want to delete ${this.quotes[index].author}?` );
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.dateCreated = new Date(quote.dateCreated)
+    this.quotes.push(quote)
+  }
+  quoteDelete(isViewed, index){
+    if(isViewed){
+    let toDelete = confirm(`Are you syre you want to delete ${this.quotes[index].quote} quote?` );
     if (toDelete) {
       this.quotes.splice(index,1);
       }
