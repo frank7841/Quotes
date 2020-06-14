@@ -1,1 +1,9 @@
-<p>quote-details works!</p>
+<div class="row">
+    <div class="com-md-4">
+<blockquote class="blockquote-footer"> Author: {{quote.author}}<br>Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated  | date:'short'}}</blockquote>
+{{quote.voteCount}}
+    </div>
+    <div class="col-md-4">
+<button class="btn btn-sm btn-outline-dark" (click) = 'quoteDelete(true)'> Delete Quote</button>
+    </div>
+</div>
