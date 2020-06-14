@@ -1,3 +1,9 @@
 button#delete {
     float: right;
 }
+blockquote {
+    margin-left: 2em;
+}
+button{
+    margin-left: 1.5em;
+}
