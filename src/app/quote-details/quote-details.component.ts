@@ -12,6 +12,14 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(viewed:boolean){
     this.isViewed.emit(viewed);
   }
+  likes:number=0;
+  disLikes:number=0;
+  incrementUp(quote){
+    quote.likes++
+  }
+  incrementDown(quote){
+    quote.disLikes++
+  }
 
   constructor() { }
 
