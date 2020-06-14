@@ -1,10 +1,10 @@
 <div class="row">
     <div class="com-md-4">
 <blockquote class="blockquote-footer"> Author: {{quote.author}}<br>Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated  | date:'short'}}</blockquote>
-<button class="btn btn-success btn-sm" (click) = 'incrementUp(quote)'><strong>Upvote</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-up"></i></button>&nbsp;&nbsp;{{quote.likes}}
-<button class="btn btn-danger btn-sm" (click) = 'incrementDown(quote)'><strong>DownVote</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-down"></i></button>&nbsp;&nbsp;{{quote.disLikes}}
+<button class="btn btn-outline-success btn-sm" (click) = 'incrementUp(quote)'><strong>Upvote</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-up"></i></button>&nbsp;&nbsp;{{quote.likes}}
+<button class="btn btn-outline-danger btn-sm" (click) = 'incrementDown(quote)'><strong>DownVote</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-down"></i></button>&nbsp;&nbsp;{{quote.disLikes}}
     </div>
     <div class="col-md-4">
-<button class="btn btn-sm btn-outline-dark" id="delete" (click) = 'quoteDelete(true)'> Delete Quote</button>
+<button class="btn btn-sm btn-danger" id="delete" (click) = 'quoteDelete(true)'> Delete Quote</button>
     </div>
 </div>
