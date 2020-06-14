@@ -8,9 +8,8 @@
             <br>
             <hr>
             <div *ngFor='let quote of quotes ;let i = index'>
-                <p>"{{quote.quote}}" <br>Author: {{quote.author}}--Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated}}</p>                
+                <p>"{{quote.quote}}" <br>Author: {{quote.author}}--Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated  | date:'short'}}</p>                
                 <p>{{quote.voteCount}}</p> 
-                <p></p>
             </div>
         </div>
 
