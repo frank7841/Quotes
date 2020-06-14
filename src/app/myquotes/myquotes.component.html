@@ -4,18 +4,13 @@
         <div class="col-md-4">
             <app-quote-form></app-quote-form>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8">
             <br>
             <hr>
             <div *ngFor='let quote of quotes ;let i = index'>
-                <p><span id="quotes">"{{quote.quote}}"</span> <br><blockquote class="blockquote-footer"> Author: {{quote.author}}<br>Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated  | date:'short'}}</blockquote></p>                
-                <p>{{quote.voteCount}}</p> 
+                <p><span id="quotes">"{{quote.quote}}"</span> <br>
+                    <app-quote-details [quote]='quote'(isViewed)='quoteDelete($event,i)'></app-quote-details></p>                 
             </div>
         </div>
-        <div class="col-md-4">
-            <br>
-            <hr>
-        </div>
-
     </div>
 </div>
