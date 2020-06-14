@@ -7,7 +7,7 @@ import {MyQuote} from '../my-quote'
 })
 export class MyquotesComponent implements OnInit {
   quotes: MyQuote[] = [
-    new MyQuote (1,'Frankline','Avengers Assemble','Captain America',2,new Date()),
+    new MyQuote (1,'Frankline','Avengers Assemble','Captain America',3,2,new Date()),
   ]
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
