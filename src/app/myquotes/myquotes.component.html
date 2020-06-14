@@ -4,5 +4,15 @@
         <div class="col-md-4">
             <app-quote-form></app-quote-form>
         </div>
+        <div class="col-md-4">
+            <br>
+            <hr>
+            <div *ngFor='let quote of quotes ;let i = index'>
+                <p>"{{quote.quote}}" <br>Author: {{quote.author}}--Publisher: {{quote.publisher}}<br>Date Published: {{quote.dateCreated}}</p>                
+                <p>{{quote.voteCount}}</p> 
+                <p></p>
+            </div>
+        </div>
+
     </div>
 </div>
