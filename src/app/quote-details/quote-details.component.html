@@ -4,7 +4,7 @@
 <button class="btn btn-outline-success btn-sm" (click) = 'incrementUp(quote)'><strong>Upvote</strong>&nbsp;&nbsp;{{quote.likes}}</button>&nbsp;&nbsp;
 <button class="btn btn-outline-danger btn-sm" (click) = 'incrementDown(quote)'><strong>DownVote</strong>&nbsp;&nbsp;{{quote.disLikes}}</button>&nbsp;&nbsp;
 <br> <br>
-<span class="badge badge-primary" *ngIf='quote.likes > 1;'>Voted Best Quote</span>  
+<span class="" *ngIf='quote.likes > 1;'appHighlight>Best Quote!</span>  
     </div>
     <div class="col-md-4">
 <button class="btn btn-sm btn-danger" id="delete" (click) = 'quoteDelete(true)'> Delete Quote</button>
