@@ -1,4 +1,4 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
 import{MyQuote} from './my-quote'
 
 
@@ -7,6 +7,8 @@ import{MyQuote} from './my-quote'
 })
 export class HighlightDirective {
 
-  constructor() { }
+  constructor(renderer: Renderer2, elmRef: ElementRef) {
+    renderer.setStyle(elmRef.nativeElement, 'color', 'green');
+   }
 
 }
