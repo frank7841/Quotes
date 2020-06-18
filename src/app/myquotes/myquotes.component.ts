@@ -9,6 +9,7 @@ export class MyquotesComponent implements OnInit {
   quotes: MyQuote[] = [
     new MyQuote (1,'Frankline','Avengers Assemble','Captain America',3,2,new Date()),
   ]
+  dateCreated:Date;
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
