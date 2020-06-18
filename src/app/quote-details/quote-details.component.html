@@ -1,6 +1,6 @@
 <div class="row">
     <div class="com-md-4" >
-<blockquote class="blockquote-footer"> Author: {{quote.author}}<br>Publisher: {{quote.publisher}}<br>Published on:{{quote.dateCreated|date:'medium'}}<br>Posted: {{quote.dateCreated|datePassed}} days ago</blockquote>
+<blockquote class="blockquote-footer"> Author: {{quote.author}}<br>Publisher: {{quote.publisher}}<br>Published on:{{quote.dateCreated|date:'medium'}}<br>Posted: {{quote.dateCreated|timeAgo}} </blockquote>
 <button class="btn btn-outline-success btn-sm" (click) = 'incrementUp(quote)'><strong>Upvote</strong>&nbsp;&nbsp;{{quote.likes}}</button>&nbsp;&nbsp;
 <button class="btn btn-outline-danger btn-sm" (click) = 'incrementDown(quote)'><strong>DownVote</strong>&nbsp;&nbsp;{{quote.disLikes}}</button>&nbsp;&nbsp;
 <br> <br>
